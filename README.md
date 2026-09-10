@@ -3,7 +3,7 @@
 Faire-part web pour le mariage de **Michel & Esther**, le **samedi 31 octobre 2026**
 à Port-Bouët (Abidjan, Côte d'Ivoire).
 
-Voir en ligne : https://lagohjean.github.io/invitation-esther-michel/
+Voir en ligne : https://michel-et-esther.github.io/
 
 ## Le déroulé de la page
 
