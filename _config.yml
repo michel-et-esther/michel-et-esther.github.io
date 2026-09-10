@@ -1,0 +1,5 @@
+# Fichiers présents dans le dépôt mais que GitHub Pages ne doit pas publier :
+# la passation contient des notes de travail, sans intérêt pour les invités.
+exclude:
+  - CLAUDE.md
+  - README.md
