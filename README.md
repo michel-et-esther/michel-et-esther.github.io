@@ -61,7 +61,7 @@ sont des variables CSS en tête de [`assets/css/style.css`](assets/css/style.css
 Une seule ligne, dans `assets/js/main.js` :
 
 ```js
-whatsapp: "2250555783875",   // format international, sans le +
+whatsapp: "2250789710514",   // format international, sans le +
 ```
 
 ### Ajouter la musique d'ambiance

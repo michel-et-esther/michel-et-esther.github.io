@@ -14,7 +14,7 @@
     dateMariage: "2026-10-31T12:30:00+00:00",
 
     // Numéro WhatsApp qui reçoit les confirmations (format international, sans +)
-    whatsapp: "2250555783875",
+    whatsapp: "2250789710514",
 
     // Musique d'ambiance : déposez un fichier ici pour activer le bouton son.
     musique: "assets/audio/ambiance.mp3",

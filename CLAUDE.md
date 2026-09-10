@@ -138,8 +138,10 @@ Compte à rebours calé sur `2026-10-31T12:30:00+00:00` (Abidjan = UTC+0).
 
 ### Contacts
 
-Trois numéros fournis. Le **premier** reçoit les RSVP WhatsApp (`2250555783875`), les trois
-sont affichés en boutons d'appel sous le formulaire.
+Trois numéros fournis. C'est le **troisième** qui reçoit les RSVP WhatsApp
+(`2250789710514`) — Esther l'a demandé explicitement le 10/09, après qu'on eut d'abord
+retenu le premier par défaut. Les trois sont affichés en boutons d'appel sous le
+formulaire.
 
 - 05 55 78 38 75 → `tel:+2250555783875`
 - 05 66 50 83 78 → `tel:+2250566508378`
@@ -229,16 +231,12 @@ assets/img/favicon.svg        monogramme ME sur fond sauge
 
 ## 5. Décisions en attente — à reprendre
 
-1. **Le numéro RSVP n'est pas confirmé.** J'ai retenu le premier des trois
-   (`2250555783875`). À valider auprès de Roro. Une seule ligne à changer, dans
-   `CONFIG.whatsapp` en tête de `assets/js/main.js`.
-
-2. **Les textes de « Notre histoire » sont volontairement sans faits.** Je ne connais pas
+1. **Les textes de « Notre histoire » sont volontairement sans faits.** Je ne connais pas
    leur histoire réelle ; les deux premières étapes (« La rencontre » / « Le commencement »
    et « La promesse » / « Le temps ») sont poétiques et **sans dates inventées**. Si Roro
    fournit les vraies dates ou anecdotes, remplacer dans `index.html`. **Ne rien inventer.**
 
-3. **« Hôtel » ou « autel » communal — question ouverte.** Le 10/09 Roro a écrit :
+2. **« Hôtel » ou « autel » communal — question ouverte.** Le 10/09 Roro a écrit :
    *« À l'hôtel, c'est plutôt autel »*. Je **n'ai pas appliqué** la correction, après
    vérification : le portail officiel de la commune écrit *« La célébration du mariage se
    fait au sein de l'**Hôtel Communal** de Port-Bouët »*
@@ -247,6 +245,11 @@ assets/img/favicon.svg        monogramme ME sur fond sauge
    faute et créerait une confusion avec la bénédiction religieuse de 13h30. Le site reste
    donc sur « Hôtel communal ». **Si l'utilisateur réaffirme le choix, l'appliquer** : le
    mot apparaît à deux endroits dans `index.html` (carte du programme et carte du lieu).
+
+### Décisions tranchées
+
+- **Numéro RSVP** (10/09) : les confirmations partent sur le **07 89 71 05 14**
+  (`2250789710514`), à la demande d'Esther. Ce n'était pas le premier de la liste.
 
 ### Points cosmétiques connus, non corrigés
 
