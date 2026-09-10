@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 600" preserveAspectRatio="none" width="200" height="600">
+  <!-- Vantail gauche d'une porte sculptée. Le vantail droit est le miroir de celui-ci.
+       Les traits sombres jouent le creux de la sculpture, les clairs la lumière. -->
+  <defs>
+    <linearGradient id="creux" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1e2821" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#16201a" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="relief" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fcf9f0" stop-opacity=".42"/>
+      <stop offset="100%" stop-color="#fcf9f0" stop-opacity=".05"/>
+    </linearGradient>
+
+    <!-- Quadrilobe : le motif de tracerie répété dans les caissons -->
+    <symbol id="quadrilobe" viewBox="0 0 100 100">
+      <path d="M50 6c9 0 16 7 16 16 0 4-1 7-3 10 3-2 6-3 10-3 9 0 16 7 16 16s-7 16-16 16c-4 0-7-1-10-3 2 3 3 6 3 10 0 9-7 16-16 16s-16-7-16-16c0-4 1-7 3-10-3 2-6 3-10 3-9 0-16-7-16-16s7-16 16-16c4 0 7 1 10 3-2-3-3-6-3-10 0-9 7-16 16-16z"
+            fill="none" stroke="url(#creux)" stroke-width="3.4"/>
+      <circle cx="50" cy="50" r="8" fill="none" stroke="url(#creux)" stroke-width="3"/>
+    </symbol>
+
+    <!-- Alliances entrelacées, motif du tympan -->
+    <symbol id="alliances" viewBox="0 0 100 70">
+      <g fill="none" stroke="url(#creux)" stroke-width="3.4">
+        <circle cx="38" cy="40" r="22"/>
+        <circle cx="64" cy="40" r="22"/>
+        <circle cx="38" cy="40" r="16" stroke-width="2"/>
+        <circle cx="64" cy="40" r="16" stroke-width="2"/>
+        <path d="M51 6l6 9H45z" stroke-linejoin="round"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Nervures verticales du bois -->
+  <g stroke="url(#creux)" stroke-width="1.1" opacity=".5">
+    <path d="M22 30V590M46 24V590M70 20V590M94 16V590M118 14V590M142 12V590M166 10V590M188 8V590"/>
+  </g>
+
+  <!-- Grande arcade : montant gauche puis arc vers le centre -->
+  <path d="M18 592V150C18 74 54 26 200 20" fill="none" stroke="url(#creux)" stroke-width="9"/>
+  <path d="M30 592V152C30 84 62 40 200 34" fill="none" stroke="url(#relief)" stroke-width="3"/>
+
+  <!-- Arcade intérieure -->
+  <path d="M44 578V160C44 98 74 58 200 52" fill="none" stroke="url(#creux)" stroke-width="5"/>
+
+  <!-- Traverses : elles découpent la porte en caissons -->
+  <g stroke="url(#creux)" stroke-width="7">
+    <path d="M18 300H200M18 448H200"/>
+  </g>
+  <g stroke="url(#relief)" stroke-width="2.4">
+    <path d="M22 306H200M22 454H200"/>
+  </g>
+
+  <!-- Tympan : alliances et rosace -->
+  <use href="#alliances" x="100" y="84" width="82" height="57"/>
+  <use href="#quadrilobe" x="66" y="164" width="118" height="118"/>
+
+  <!-- Caisson médian -->
+  <rect x="52" y="318" width="140" height="118" rx="4" fill="none" stroke="url(#creux)" stroke-width="4"/>
+  <use href="#quadrilobe" x="78" y="330" width="94" height="94"/>
+
+  <!-- Caisson bas : entrelacs -->
+  <rect x="52" y="466" width="140" height="102" rx="4" fill="none" stroke="url(#creux)" stroke-width="4"/>
+  <g fill="none" stroke="url(#creux)" stroke-width="3">
+    <path d="M70 517c16-26 42-26 58 0-16 26-42 26-58 0z"/>
+    <path d="M114 517c16-26 42-26 58 0-16 26-42 26-58 0z"/>
+    <circle cx="122" cy="517" r="5"/>
+  </g>
+
+  <!-- Anneau de tirage, côté ouverture -->
+  <g fill="none" stroke="#1e2821" stroke-opacity=".55">
+    <circle cx="180" cy="382" r="15" stroke-width="6"/>
+    <circle cx="180" cy="382" r="15" stroke="#fcf9f0" stroke-opacity=".3" stroke-width="2"/>
+    <rect x="172" y="356" width="16" height="12" rx="3" stroke-width="4"/>
+  </g>
+
+  <!-- Ombre du battant, plus dense vers la charnière -->
+  <rect width="46" height="600" fill="#16201a" opacity=".16"/>
+  <rect x="190" width="10" height="600" fill="#16201a" opacity=".22"/>
+</svg>
